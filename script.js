@@ -325,7 +325,6 @@ function renderAll() {
   renderLocation();
   renderPrayerGrid();
   renderHijri();
-  renderMethod();
 }
 
 function renderPrayerGrid() {
@@ -432,8 +431,7 @@ function renderHijri() {
 }
 
 function renderMethod() {
-  var el = document.getElementById('methodInfo');
-  el.textContent = state.methodName ? 'Metode: ' + state.methodName : '';
+  // method label hidden by user request
 }
 
 // ─── Loading / error ─────────────────────────────────────
